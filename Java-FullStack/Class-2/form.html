@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form>
+        <label>Name</label>
+        <input type="text"/>
+
+        <label>EMail</label>
+        <input type="email"/>
+
+        <label>Password</label>
+        <input type="password"/>
+
+        <label>Phone</label>
+        <input type="number" pattern="\d{10}" maxlength="10"/>
+
+        <label>Age</label>
+        <input type="number" min="1" max="110"/>
+
+        <label>D.O.B</label>
+        <input type="date" min="09-05-1905" max="19-08-2024"/>
+
+        <p>Favourite foods</p>
+
+        <label>Burger</label>
+        <input type="checkbox"/>
+
+        <label>naan</label>
+        <input type="checkbox"/>
+
+        <label>Veg soup</label>
+        <input type="checkbox"/>
+
+        <label>Biriyani</label>
+        <input type="checkbox"/>
+
+        <p>Gender</p>
+
+        <label>Male</label>
+        <input name="gender" type="radio"/>
+
+        <label>Female</label>
+        <input name ="gender" type = "radio"/>
+
+        <label>Favourite colour</label>
+        <select>
+            <option>Blue</option>
+            <option>yellow</option>
+            <option>Orange</option>
+            <option>Red</option>
+        </select>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
