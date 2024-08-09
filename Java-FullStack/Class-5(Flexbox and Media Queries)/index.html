@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            height: 500px;
+            background-color: grey;
+            display: flex;
+            /* flex-direction: column; */
+            flex-direction: row-reverse;
+            /* justify-content work depends on flex-direction either row or column basically it depends on mainaxis we can toggle main axis using flex direction */
+            justify-content: space-evenly;
+            /* same property as justify-content follows align items also work depends on flex-direction */
+            /* align-items: center; */
+            /* flex-wrap helps us to wrap divs and make sure the design does n't break */
+            /* and makes the element responsive on size based on the size of total screen */
+            flex-wrap: wrap;
+            /* above prop helps us to fix issue in display: inline; */
+        }
+
+        .item {
+            background-color: lightsalmon;
+            /* display: inline;  will not consider width and height declared for div's this issue can be fixed by flex. */
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item box2 {
+            /* display: flex;
+            margin: 10px;
+            background-color: lightsalmon; */
+            /* flex-basis: 200px; */
+            /* flex-grow helps us to make our elements responsive based on a number like 2x/ 3x could be anything */
+            /* as same as flex-grow, flex flex-shrink works the same for responsiveness but it'll shrink on adjusting the browser screen */
+            /* but the flex-basis is basis once the screen shrinks or expands the the flex-grow and flex-shrink properties comes into picture */
+            /* flex-shrink: 2; */
+            /* flex-grow: 2; */
+            order: 3;
+        }
+
+        .item box1{
+            order: 2;
+        }
+
+        .item box3{
+            order: 1;
+        }
+    </style>
 </head>
+
 <body>
-    <div class=""></div>
+    <!-- div*25 -->
+    <!-- div*3.item -->
+    <div class="container">
+        <div class="item box1">Box 1</div>
+        <div class="item box2">Box 2</div>
+        <div class="item box3">Box 3</div>
+        <!-- <div class="item">Box 1</div>
+        <div class="item">Box 2</div>
+        <div class="item">Box 3</div> -->
+        <!-- <div class="item">Box 4</div>
+        <div class="item">Box 5</div>
+        <div class="item">Box 6</div>
+        <div class="item">Box 7</div>
+        <div class="item">Box 8</div>
+        <div class="item">Box 9</div>
+        <div class="item">Box 10</div>
+        <div class="item">Box 11</div>
+        <div class="item">Box 12</div> -->
+    </div>
 </body>
+
 </html>

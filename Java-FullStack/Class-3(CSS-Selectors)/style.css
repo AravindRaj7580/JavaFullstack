@@ -1,10 +1,11 @@
 /* Rules of CSS */
 
-h1{
+h1 {
     color: blue;
     background-color: yellow;
 }
-h2{
+
+h2 {
     color: green;
     background-color: aqua;
 }
